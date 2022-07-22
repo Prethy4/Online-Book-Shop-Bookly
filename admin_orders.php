@@ -25,8 +25,8 @@ if(isset($_GET['delete'])){
    header('location:admin_orders.php');
 }
 
-
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +41,7 @@ if(isset($_GET['delete'])){
    <link rel="stylesheet" href="css/admin_style.css?v=<?=$version?>">
 
 
-</head>
+   </head>
 <body>
    
 <?php include 'admin_header.php'; ?>
@@ -74,7 +74,7 @@ if(isset($_GET['delete'])){
                <option value="completed">completed</option>
             </select>
             <input type="submit" value="update" name="update_order" class="option-btn">
-            <a href="admin_orders.php?delete=<?php echo $fetch_orders['id']; ?>" onclick="return confirm('delete this order?');" class="delete-btn">delete order</a>
+            <a href="admin_orders.php?delete=<?php echo $fetch_orders['id']; ?>" onclick="return confirm('delete this order?');" class="delete-btn">delete</a>
          </form>
       </div>
       <?php
@@ -86,13 +86,6 @@ if(isset($_GET['delete'])){
    </div>
 
 </section>
-
-
-
-
-
-
-
 
 
 

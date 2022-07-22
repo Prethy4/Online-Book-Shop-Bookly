@@ -8,14 +8,13 @@ $admin_id = $_SESSION['admin_id'];
 
 if(!isset($admin_id)){
    header('location:login.php');
-}
+};
 
 if(isset($_GET['delete'])){
    $delete_id = $_GET['delete'];
    mysqli_query($conn, "DELETE FROM `message` WHERE id = '$delete_id'") or die('query failed');
    header('location:admin_contacts.php');
 }
-
 
 ?>
 
@@ -40,7 +39,8 @@ if(isset($_GET['delete'])){
 <section class="messages">
 
    <h1 class="title"> messages </h1>
-<div class="box-container">
+
+   <div class="box-container">
    <?php
       $select_message = mysqli_query($conn, "SELECT * FROM `message`") or die('query failed');
       if(mysqli_num_rows($select_message) > 0){
@@ -48,7 +48,7 @@ if(isset($_GET['delete'])){
       
    ?>
    <div class="box">
-      <!-- <p> user id : <span><?php echo $fetch_message['user_id']; ?></span> </p> -->
+      <p> user id : <span><?php echo $fetch_message['user_id']; ?></span> </p>
       <p> name : <span><?php echo $fetch_message['name']; ?></span> </p>
       <p> number : <span><?php echo $fetch_message['number']; ?></span> </p>
       <p> email : <span><?php echo $fetch_message['email']; ?></span> </p>
@@ -62,8 +62,6 @@ if(isset($_GET['delete'])){
    }
    ?>
    </div>
-
-
 
 </section>
 
