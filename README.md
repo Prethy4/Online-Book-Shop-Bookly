@@ -1,2 +1,2 @@
 # Online-Book-Shop-Bookly-
-This is a Software Engineering Project on Online Book Shop using PHP, CSS, MySQL with admin and user  panel and all data's stores in MySQL database. I named this website Bookly.
+An online book store utilizing PHP, CSS, and MySQL is the subject of this software engineering project. An admin and user panel and a MySQL database are used to hold all of the data. This website is called Bookly.
