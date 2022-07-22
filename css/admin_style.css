@@ -53,7 +53,7 @@
  }
 
  body{
-   background-color: var(--cadetblue);
+   background-image: url(../images/a.jpg);
 }
 
  section{
@@ -139,6 +139,11 @@
 
 .delete-btn{
    background-color: var(--crimson);
+}
+
+.white-btn:hover{
+   background-color: var(--light-white);
+   color:var(--black);
 }
 
 @keyframes fadeIn {
